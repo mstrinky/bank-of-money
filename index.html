@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Account</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <h1 class="text-center p-4 text-danger" >Monthly Account</h1>
+    </header>
+    <main>
+      <section class="container mb-5 text-white">
+         <section>
+             <div class="image" >
+            <img src="money.jpg" alt="">
+        </div>
+         </section>
+       <section class="flexible py-0 mb-5">
+         <div>
+            <h5 class="text-center my-3">Income</h5>
+            <div class="container my-3 px-4">
+                <p class="margin ">Income:</p>
+            <input id="income" type="number" placeholder="$0"> </input>
+                 </div>
+                 <h5 class="text-center my-4">Expenses</h5>
+                 <div >
+                    <div class="container my-3 px-5">
+                <p class="margin">Food:</p>
+            <input id="food" type="number" placeholder="$0"></input>
+               </div>
+                <div class="container my-3 px-5">
+                <p class="margin">Rant :</p>
+            <input id="rant" type="number" placeholder="$0"></input>
+               </div>
+                <div class="container my-3 px-5">
+                <p class="margin">Cloth:</p>
+            <input id="cloth" type="number" placeholder="$0" ></input>
+               </div>
+                 </div>
+              <div class="px-5">
+                 <button id="calculate" class=" my-3 py-2 bg-primary text-white mx-5 rounded border">Calculate</button>
+              </div>
+               <h5  class="my-3 text-center">Total Expenses: <span id="total-expenses">$0</span> </h5>
+              
+               <h5 class="my-2 text-center">Balance: <span id="balance">$0</span> </h5>
+
+                <div class="container my-3 px-5">
+                <p class="margin">Save:</p>
+            <input type="number" placeholder="$0"></input> 
+            <button  class=" bg-primary text-white px-5 mx-2 rounded border">Save</button>
+               </div>
+               <h5 class=" text-center">Saving Amount: $0</h5>  
+               <h5 class=" text-center my-3">Remaining Balance: $0</h5>
+              </div>
+       </section>
+      </section>
+    </main>
+    
+    <script src="monthly-account.js"></script>
+</body>
+</html>
