@@ -28,18 +28,3 @@ document.getElementById('calculate').addEventListener('click',function(){
 })
 
 
-
-document.getElementById('save').addEventListener('click',function(){
-
-    const balanceField = document.getElementById('balance');
-    const balance = income - totalExpense ;
-    balanceField.innerText = balance;
-
-    const amountOfSave = document.getElementById('amountof-save');
-    const amountString = amountOfSave.value;
-    const amount = parseInt(amountString);
-
-   const savingAmount = balanceField - amount/100;
-
- 
-})
